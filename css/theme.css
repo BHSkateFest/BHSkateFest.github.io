@@ -16579,7 +16579,7 @@ button.close {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: transparent url("../pics/video-placeholder-fest-dark.jpg") no-repeat center;
+  background: transparent url("../pics/video-placeholder-fest-dark.jpg") no-repeat ;
   background-size: cover;
 }
 .video-block__play {
@@ -16848,8 +16848,8 @@ button.close {
     width: 40.9999999999999999%;
   }
   .gallery__item--small {
-    height: 370px;
-    width: 29.44444444444444444%;
+    height: 270px;
+    width: 24.44444444444444444%;
   }
 }
 .gallery__item:hover::before {
