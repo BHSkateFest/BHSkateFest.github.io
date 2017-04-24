@@ -54,7 +54,7 @@ $(document).ready(function () {
   var currYear = currTime.getFullYear() + 1;
   var eventTime = currYear + "/" + currMonth + "/" + currDate;
 
-  $('#countdown').countdown('2017/04/22', function(event) {
+  $('#countdown').countdown('2017/06/03', function(event) {
     $(this).html(event.strftime(''
       + '<span class="timer__item">%D<span class="timer__item-caption">dias</span></span>'
       + '<span class="timer__item">%H<span class="timer__item-caption">horas</span></span>'
@@ -152,7 +152,7 @@ $(document).ready(function () {
         url: '/comment.php',
         data: formData,
         success: function() {
-          $('#form-submit-errors').text("Success!");
+          $('#form-submit-errors').text("Sucesso!");
         },
         error: function() {
           $('#form-submit-errors').text("Something went wrong...");
