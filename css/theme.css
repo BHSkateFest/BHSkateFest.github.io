@@ -16570,7 +16570,7 @@ button.close {
 .video-block__video-wrapper {
   height: 100%;
   position: absolute;
-  top: 0;
+  top: -193px;
   right: 0;
   bottom: 0;
   left: 0;
