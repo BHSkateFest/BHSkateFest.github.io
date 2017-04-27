@@ -15791,7 +15791,7 @@ button.close {
 .layout__about-screen {
   position: relative;
   padding: 0px 0px 124px 0px;
-  background-color: #631b71;
+  background-color: #130e37;
 }
 @media screen and (min-width: 992px) {
   .layout__about-screen {
@@ -15806,7 +15806,7 @@ button.close {
 }
 .layout__schedule-screen {
   padding: 100px 0px 40px 0px;
-  background-color: #111111;
+  background-color: #1d1946;
 }
 @media screen and (min-width: 480px) {
   .layout__schedule-screen {
@@ -15817,11 +15817,11 @@ button.close {
   margin-bottom: 65px;
 }
 .layout__video-screen {
-  background: #111111;
+  background: #1d1946;
 }
 .layout__price-screen {
   padding: 100px 0px 40px 0px;
-  background-color: #111111;
+  background-color: #1d1946;
 }
 @media screen and (min-width: 480px) {
   .layout__price-screen {
@@ -15833,14 +15833,14 @@ button.close {
 }
 .layout__gallery-screen {
   padding: 70px 0px 100px 0px;
-  background-color: #111111;
+  background-color: #1d1946;
 }
 .layout__gallery-screen .layout__section-header {
   margin-bottom: 70px;
 }
 .layout__contacts-screen {
   padding: 70px 0px 0px 0px;
-  background-color: #111111;
+  background-color: #1d1946;
 }
 .layout__contacts-screen .layout__section-header {
   margin-bottom: 70px;
@@ -15865,15 +15865,15 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #682576;
+/*  background: #1d1946;*/
   opacity: 0.6;
   pointer-events: none;
 }
-@supports ((-webkit-filter: hue-rotate(60deg)) or (filter: hue-rotate(60deg))) {
+/*@supports ((-webkit-filter: hue-rotate(60deg)) or (filter: hue-rotate(60deg))) {
   .layout__map-screen::after {
-    background: #001d61;
+    background: #1d1946;
   }
-}
+}*/
 .layout__map-screen #footer-map {
   height: 100%;
 }
@@ -15891,7 +15891,7 @@ button.close {
   transition: all 0.3s;
 }
 .socials__link:hover {
-  color: #682576;
+  color: #a9c94a;
 }
 .button {
   display: inline-block;
@@ -15940,7 +15940,7 @@ button.close {
   border: none;
   margin: 0;
   z-index: 10;
-  background-color: #631b71;
+  background-color: #130e37;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -15982,13 +15982,13 @@ button.close {
   height: 0;
   border-style: solid;
   border-width: 0 0 200px 100vw;
-  border-color: transparent transparent #631b71 transparent;
+  border-color: transparent transparent #130e37 transparent;
   bottom: 0;
   right: 0;
   box-shadow: inset 0px 1px 3px 0px #1f1f1f;
 }
 .page-header--is-shown .page-header__background {
-  background: #631b71;
+  background: #130e37;
   background-image: none;
   opacity: 0.9;
   background-image: none !important;
@@ -16123,8 +16123,8 @@ button.close {
   }
 }
 .page-footer {
-  padding-top: 64px;
-  background-color: #000000;
+  padding-top: 25px;
+  background-color: #1d1946;
   color: #ffffff;
 }
 .page-footer__header {
@@ -16209,7 +16209,7 @@ button.close {
   width: 35%;
   vertical-align: bottom;
   padding: 14px 0px 13px 0px;
-  border: 3px solid #682576;
+  border: 3px solid #a9c94a;
   border-radius: 30px;
   background: transparent;
   text-transform: uppercase;
@@ -16219,20 +16219,25 @@ button.close {
   transition: all 0.3s;
 }
 .page-footer__form input[type="submit"]:hover {
-  background: #682576;
+  background: #a9c94a;
   color: #ffffff;
 }
 .page-footer__copyright {
   margin-bottom: 25px;
-  text-align: center;
+  text-align: right;
 }
+
+.page-footer__copyright img {
+  height: 30px
+}
+
 .page-footer__copyright p {
   color: #898888;
 }
 .hero {
   padding: 0px 0px 280px 0px;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 40px;
 }
 .hero__header {
   text-align: center;
@@ -16242,6 +16247,10 @@ button.close {
   color: #ffffff;
   text-shadow: 1px 10px 0px rgba(150, 150, 150, 0.3);
 }
+.hero__header img {
+  height: 70%;
+}
+
 .hero__subheader {
   text-align: center;
   font-family: "Oswald", Times, Georgia, serif;
@@ -16300,7 +16309,7 @@ button.close {
   font-family: "Oswald", Times, Georgia, serif;
   font-size: 36px;
   line-height: 1;
-  color: #f6448f;
+  color: #a9c94a;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -16321,7 +16330,7 @@ button.close {
 .about__timer-wrap::before {
   content: "";
   position: absolute;
-  border: 3px solid #4d1558;
+  border: 3px solid #a9c94a;
   top: 12px;
   bottom: -15px;
   right: -15px;
@@ -16379,7 +16388,7 @@ button.close {
   font-family: "Oswald", Times, Georgia, serif;
   font-size: 72px;
   font-weight: 300;
-  color: #682576;
+  color: #a9c94a;
 }
 .schedule__event-order span {
   font-weight: 700;
@@ -16462,7 +16471,7 @@ button.close {
   line-height: 1;
   font-family: "Oswald", Times, Georgia, serif;
   font-weight: bold;
-  color: #8c3e9d;
+  color: #a9c94a;
 }
 .schedule__event-heading {
   margin-bottom: 15px;
@@ -16524,7 +16533,7 @@ button.close {
 .schedule__image-block figcaption {
   position: absolute;
   bottom: 26px;
-  color: #682576;
+  color: #a9c94a;
   font-weight: 700;
   font-size: 36px;
   line-height: 1;
@@ -16552,7 +16561,7 @@ button.close {
   width: 100%;
   height: 660px;
   overflow: hidden;
-  background: #111111;
+  background: #1d1946;
   vertical-align: middle;
 }
 .video-block:hover .video-block__play--is-playing {
@@ -16788,13 +16797,13 @@ button.close {
 }
 .price__card {
   padding: 2px;
-  background: linear-gradient(to bottom, #ef017c 0%, #631b71 100%);
+  background: linear-gradient(to bottom, #a9c94a 0%, #130e37 100%);
   height: 100%;
 }
 .price__card-inner {
   text-align: center;
   padding: 80px 50px 80px 50px;
-  background: #111111;
+  background: #1d1946;
   height: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -16807,7 +16816,7 @@ button.close {
   margin-bottom: 30px;
   font-size: 48px;
   line-height: 1;
-  color: #883c98;
+  color: #a9c94a;
   font-family: "Oswald", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -16859,7 +16868,7 @@ button.close {
   opacity: 0.9;
 }
 .gallery__item::before {
-  content: "\f00e";
+  content: "\f08e";
   position: absolute;
   font-family: "FontAwesome";
   width: 35px;
@@ -16882,7 +16891,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #71337e 0%, #fa6a80 100%);
+  background: linear-gradient(135deg, #130e37 0%, #a9c94a 100%);
   z-index: 2;
   opacity: 0;
   transition: all 0.3s;

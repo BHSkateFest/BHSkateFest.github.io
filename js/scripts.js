@@ -32,9 +32,9 @@ $(document).ready(function () {
   };
 
   // lightGallery inicialization
-  if (document.getElementById('lightgallery')) {
-     $("#lightgallery").lightGallery();
-  }
+  // if (document.getElementById('lightgallery')) {
+  //    $("#lightgallery").lightGallery();
+  // }
 
   // Main nav menu actions
   var toggleMenu = function() {
