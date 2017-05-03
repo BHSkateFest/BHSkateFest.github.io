@@ -16251,6 +16251,13 @@ button.close {
   height: 400px;
 }
 
+@media (max-width: 767px) {
+  .hero__header img {
+    height: 300px;
+  }
+
+}
+
 .hero__subheader {
   text-align: center;
   font-family: "Oswald", Times, Georgia, serif;
