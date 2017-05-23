@@ -16588,7 +16588,7 @@ button.close {
   width: auto;
   min-width: calc(100% + 2px);
   height: auto;
-  min-height: calc(100% + 2px);
+  /*min-height: calc(100% + 2px);*/
   position: absolute;
   top: 50%;
   right: 0;
