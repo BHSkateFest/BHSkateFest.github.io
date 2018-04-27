@@ -54,7 +54,7 @@ $(document).ready(function () {
   var currYear = currTime.getFullYear() + 1;
   var eventTime = currYear + "/" + currMonth + "/" + currDate;
 
-  $('#countdown').countdown('2018/05/26', function(event) {
+  $('#countdown').countdown('2018/06/23', function(event) {
     $(this).html(event.strftime(''
       + '<span class="timer__item">%D<span class="timer__item-caption">dias</span></span>'
       + '<span class="timer__item">%H<span class="timer__item-caption">horas</span></span>'
