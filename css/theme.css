@@ -15842,6 +15842,24 @@ button.close {
   padding: 70px 0px 0px 0px;
   background-color: #207956;
 }
+
+.layout__pre-inscricoes-screen {
+  padding: 70px 0px 0px 0px;
+  background-color: #fff;
+}
+.layout__pre-inscricoes-screen .layout__section-header {
+  color: #000;
+}
+
+.layout__pre-inscricoes-screen .button__hero {
+  color: #000;
+      border: 3px solid #000;
+          margin: 0 auto;
+    padding: 7px 20px 7px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
 .layout__contacts-screen .layout__section-header {
   margin-bottom: 70px;
 }
