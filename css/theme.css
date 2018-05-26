@@ -17135,3 +17135,14 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
+
+#guests{
+  background-color: #6c64bd;
+}
+#guests img{
+  width: 100%;
+}
+
+#guests .about__timer-header{
+  margin-top: 60px;
+}
