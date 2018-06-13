@@ -16876,6 +16876,11 @@ button.close {
   height: 300px;
   width: 100%;
 }
+  .gallery__item--doublebig {
+margin-bottom: 100px;
+    height: 300px;
+    width: 100%;
+  }
 @media screen and (min-width: 768px) {
   .gallery__item--doublebig {
 margin-bottom: 100px;
