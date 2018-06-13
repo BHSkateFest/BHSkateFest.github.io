@@ -15860,6 +15860,7 @@ button.close {
     text-align: center;
 }
 
+
 .layout__contacts-screen .layout__section-header {
   margin-bottom: 70px;
 }
@@ -17155,4 +17156,15 @@ margin-bottom: 100px;
 
 #guests .about__timer-header{
   margin-top: 60px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .layout__pre-inscricoes-screen {
+    display: none;
+  }
+  .gallery__item--doublebig .gallery__image {
+    width: 100%;
+    height: auto; 
+  }
 }
