@@ -1,0 +1,167 @@
+/*UI Abdo Host*/
+/* scroll top button */
+.scrollTop {
+    background: none;
+    border: 3px solid #666;
+    border-radius: 20pc;
+    color: #666;
+    text-align: center;
+    line-height: 32px;
+    font-size: 21px;
+    bottom: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 550;
+    right: 11px;
+    top: 11px;
+    margin: 0;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.scrollTop:hover {
+    background: #ff7f66;
+    border: 3px solid #ff7f66;
+    color: #fff;
+}
+/* nicescroll */
+.nicescroll-rails {
+    z-index: 500!important;
+}
+/* choseColors */
+.choseColors {
+    background: #fff;
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    width: 45px;
+    height: 66px;
+    padding: 10px 2px;
+    position: fixed;
+    top: 81px;
+    left: 0;
+    z-index: 500;
+    overflow: hidden;
+}
+.choseColors a.chose {
+    height: 45px;
+    display: block;
+    float: right;
+    overflow: hidden;
+    line-height: 45px;
+    text-align: right;
+    margin: 0px 8px 0px 8px;
+    font-size: 29px;
+    color: #888;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.choseColors a.chose:hover {
+    color: #111;
+}
+.choseColors ul li {
+    float: right;
+    margin: 0 0 0 10px;
+}
+.choseColors ul li a {
+    background: #fff;
+    width: 49px;
+    height: 45px;
+    display: block;
+    overflow: hidden;
+    line-height: 150px;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.choseColors ul li a:hover {
+    border: 5px solid #333;
+}
+.choseColors ul li.active a {
+    border: 5px solid #333;
+}
+.choseColors ul li.red a {
+    background: #ef525c;
+}
+.choseColors ul li.light_blue a {
+    background: #41aed4;
+}
+.choseColors ul li.yellow a {
+    background: #f1af2c;
+}
+.choseColors ul li.green_blue a {
+    background: #1fad95;
+}
+.choseColors ul li.pink a {
+    background: #ed7dca;
+}
+.choseColors ul li.green a {
+    background: #80b137;
+}
+/* wrapperLoading */
+.wrapperLoading {
+    width: 100px;
+    height: 100px;
+    display: none;
+    position: fixed;
+    text-align: center;
+    top: 40%;
+    left: 0;
+}
+.wrapperLoading span {
+    position: relative;
+    font-size: 55px;
+    color: #ccc;
+    display: block;
+    -moz-animation: loading_rotat 0.8s infinite linear;
+    -o-animation: loading_rotat 0.8s infinite linear;
+    -webkit-animation: loading_rotat 0.8s infinite linear;
+    animation: loading_rotat 0.8s infinite linear;
+}
+.hidden_scroll {
+    opacity: 0;
+}
+.visible_scroll {
+    opacity: 1;
+}
+.btn-dark {
+    background: #888;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+.btn-dark:hover, .btn-dark:focus {
+    background: #ff7f66;
+    color: #fff;
+}
+@keyframes loading_rotat {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+@-moz-keyframes loading_rotat {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+@-webkit-keyframes loading_rotat {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+@-o-keyframes loading_rotat {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
