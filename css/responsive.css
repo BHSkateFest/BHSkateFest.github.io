@@ -1,0 +1,97 @@
+@media only screen and (min-width: 1015px) {
+    #Wrapper.boxed {
+        background: #f5f5f5;
+        box-shadow: 2px 0px 4px rgba(0,0,0,0.25), -2px 0px 4px rgba(0,0,0,0.25);
+        width: 1200px;
+        margin: 30px auto;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    body.boxed {
+        background: url('../images/boxedBg.png') repeat center center fixed;
+    }
+    .AH_Nav.boxed.fixed_scroll {
+        max-width: 1200px;
+        width: inherit;
+    }
+}
+@media only screen and (max-width: 1015px) {
+    #Skills .col-sm-3, #About .col-sm-4, #Steps .col-sm-3, #Activity .col-sm-4 {
+        margin-bottom: 30px;
+    }
+    #ContactUS .col-sm-4 {
+        margin-bottom: 30px;
+    }
+    #ContactUS form .col-md-12 {
+        margin-bottom: 30px;
+    }
+    #Blog .content .ah_post img, #Blog .content .ah_post .post_video iframe, #Blog .content .ah_post .post_slideshow, #Blog .content .ah_post .post_video {
+        height: 325px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #ContactUS .col-sm-4:last-child {
+        margin-bottom: 0;
+    }
+    #ContactUS form .row {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 917px) {
+    #About .row .aboutMe {
+        margin-top: 30px;
+    }
+    #Skills .skill {
+        margin-bottom: 30px;
+    }
+    #About .row .aboutMe {
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #About .row .aboutMe {
+        margin-top: 30px;
+    }
+    .AH_Nav .navbar-collapse ul.navbar-nav {
+        height: auto;
+    }
+    #Blog .content .ah_post div.post_details {
+        padding-top: 11px;
+    }
+    #Blog .content .ah_post div.post_details li {
+        display: none;
+    }
+    #Blog .content .ah_post div.post_details li:last-child {
+        float: none !important;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+    #Skills .skill {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 497px) {
+    #About .row .flickrSlider {
+        margin-top: 30px;
+    }
+    #ContactUS .col-sm-4 {
+        margin-bottom: 65px;
+    }
+    #ContactUS .col-sm-4:last-child {
+        margin-bottom: 30px;
+    }
+    #Blog .content .ah_post {
+        height: auto;
+        padding-bottom: 70px;
+    }
+    #Blog .content .ah_post img, #Blog .content .ah_post .post_video iframe, #Blog .content .ah_post .post_slideshow, #Blog .content .ah_post .post_video {
+        height: 225px;
+    }
+    #Blog .content .ah_post h3.title {
+        font-size: 23px;
+    }
+    #Blog .content .ah_post p.info {
+        font-size: 19px;
+    }
+}
