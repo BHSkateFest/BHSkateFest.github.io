@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\images",
+    "\\images\\clients",
+    "\\images\\infra",
+    "\\js",
+    "\\js\\jquery"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\images\\infra\\midia.jpg",
   "PreviewInSolutionExplorer": false
 }

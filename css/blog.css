@@ -1,7 +1,6 @@
 /* Blog Style*/
 #Blog {
     margin: 60px 0px 0px 0px;
-    min-height: 500px;
 }
 #Blog .blog_breadcrumb {
     height: 50px;
