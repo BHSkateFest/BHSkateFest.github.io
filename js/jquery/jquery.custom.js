@@ -85,7 +85,7 @@ $(window).load(function () {
     $('div.wrapperLoading').fadeOut(function () {
         $('#Wrapper').css({"visibility": "visible"}).animate({opacity: "1"}, 500);
         animated('#About .flickrSlider, .fellowUs .container', 'zoomIn');
-        animated('#Header .container, #Skills, #Portfolio .container, #Activity h2, #Activity .row, #Clients .container, #ContactUS h2, #ContactUS .row', 'fadeInDown');
+        animated('#Header .container, #Skills, #Portfolio .container, #Activity h2, #Activity .row, #Clients .container, #Apoio .container, #ContactUS h2, #ContactUS .row', 'fadeInDown');
         animated('.AH_Nav #navbar-collapse, #About .profileBlock', 'fadeInLeft');
         animated('.AH_Nav .scrollTop, #About .aboutMe', 'fadeInRight');
     });
@@ -204,6 +204,13 @@ $(document).ready(function () {
     }
     // clients slider
     $("#Clients .Slider").owlCarousel({
+        items: 4, //10 items above 1000px browser width
+        itemsDesktop: [1000, 4], //4 items between 1000px and 901px
+        itemsDesktopSmall: [900, 2], // betweem 900px and 601px
+        itemsTablet: [600, 1], //2 items between 600 and 0
+        itemsMobile: true // itemsMobile disabled - inherit from itemsTablet option
+    });
+    $("#Apoio .Slider").owlCarousel({
         items: 5, //10 items above 1000px browser width
         itemsDesktop: [1000, 5], //5 items between 1000px and 901px
         itemsDesktopSmall: [900, 3], // betweem 900px and 601px
