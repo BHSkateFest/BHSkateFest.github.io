@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
-    "\\images",
     "\\images\\clients",
     "\\images\\infra",
-    "\\js",
     "\\js\\jquery"
   ],
   "SelectedNode": "\\index.html",
