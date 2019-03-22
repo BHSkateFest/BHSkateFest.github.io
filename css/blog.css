@@ -964,6 +964,30 @@
     overflow: hidden;
     position: relative;
 }
+#Blog .content .singleBlog .aboutMe {
+    background: #fff;
+    border-radius: 4px;
+    height: 315px;
+    box-shadow: 0px 2px 3px #ccc;
+    -moz-box-shadow: 0px 2px 3px #ccc;
+    -webkit-box-shadow: 0px 2px 3px #ccc;
+    -o-box-shadow: 0px 2px 3px #ccc;
+    -ms-box-shadow: 0px 2px 3px #ccc;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+#Blog .content .singleBlog .aboutMe p {
+    padding: 10px;
+}
+
+#Blog .responsive {
+    max-width: 100%;
+    height: auto;
+}
+
 #Blog .content .singleBlog .title h2 {
     font-size: 27px;
     font-family: 'Abel';
@@ -972,6 +996,30 @@
     text-transform: capitalize;
     line-height: 42px;
     color: #555;
+}
+#Blog h2 {
+    border: 2px solid #f1af2c;
+    border-radius: 3px;
+    width: 48.5%;
+    color: #f1af2c;
+    font-size: 35px;
+    font-family: 'Abel';
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    margin: 60px auto 60px auto;
+}
+#Blog h3 {
+    width: 48.5%;
+    color: #f1af2c;
+    font-size: 35px;
+    font-family: 'Abel';
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    margin: 60px auto 60px auto;
 }
 #Blog .content .singleBlog .title span.format {
     background: #ff7f66;
