@@ -6,6 +6,17 @@
 #Header {
     background: #f1af2c url(../images/yellow/header.jpg) no-repeat center center fixed;
     background-size: 100% 100%}
+
+.preinscricao{
+    color: #ffffff;
+    background-color: #f1af2c;
+    font-size: 19px;
+    font-family: 'Abel';
+    text-shadow: none;
+    padding: 15px;
+    height: 65px;
+    line-height: 63px;
+}
 #Activity {
     background: #f1af2c url(../images/yellow/activity.jpg) no-repeat center center fixed;
     background-size: 100% 100%}
