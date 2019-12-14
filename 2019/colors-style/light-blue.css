@@ -1,0 +1,48 @@
+/* 
+    
+-> Blue Design
+
+*/
+#Header {
+    background: #4eb9dd url(../images/light_blue/header.jpg) no-repeat center center fixed;
+    background-size: 100% 100%}
+#Activity {
+    background: #4eb9dd url(../images/light_blue/activity.jpg) no-repeat center center fixed;
+    background-size: 100% 100%}
+#ContactUS {
+    background: #4eb9dd url(../images/light_blue/contact.jpg) no-repeat center center fixed;
+    background-size: 100% 100%}
+.nicescroll-rails div, .navbar-default .navbar-nav > li.active > a, .dropdown-menu li a:hover, .dropdown-menu li.selected a, #About .row .flickrSlider .sliderPager button.active span {
+    background: #4eb9dd!important;
+}
+.nicescroll-rails div, .navbar-default .navbar-nav > li.active > a, .dropdown-menu li a:hover, .dropdown-menu li.selected a, .scrollTop:hover, #Steps .row section h1 i, #Portfolio h2 a.prev, #Portfolio h2 a.next, #Portfolio .owl-pagination .owl-page.active span, #Clients .owl-pagination .owl-page.active span, #ContactUS .contactItem i, .fellowUs, #Blog .content .ah_post div.post_format, #Blog .content .ah_post div.post_details li a.btn-more:hover, #Body .sidebar .widget div.tags a:hover, #Blog .content .post_pager .active, #Blog .content .singleBlog .title span.format, #Blog .content .singleBlog .single_bottom .tags a:hover, #Body .portfolioPage .btn-group .btn.active {
+    background: #4eb9dd;
+}
+#About .row .aboutMe h3, #Portfolio .owl-pagination .owl-page.active, #Clients .owl-pagination .owl-page.active, #Clients h2, #ContactUS .contactItem, .scrollTop:hover, #Clients .Slider div.client a:hover, #Body .sidebar .widget div.tags a:hover, #Blog .content .post_pager .active, #Body .portfolioPage .btn-group .btn.active {
+    border-color: #4eb9dd!important;
+}
+a, #Portfolio h2 a.prev:hover, #Portfolio h2 a.next:hover, #Steps .row section:hover h1 i, #About .row .profileBlock h4, .navbar-default .navbar-nav > li > a:hover, #Portfolio h2, #Clients h2, #ContactUS .contactItem:hover i, #Activity .post:hover a.link, #Activity .post h3 a:hover, #Activity a.viewAll:hover, #Body .sidebar .widget ul.categories li a:hover, #Blog .content .ah_post h3.title a:hover, #Blog .content .ah_post div.post_details li a:hover, #Body .sidebar .widget ul.popular li:hover a, #Blog .content .singleBlog .single_details li a:hover {
+    color: #4eb9dd;
+}
+.skillRang {
+    color: #4eb9dd!important;
+}
+a:hover, #About .row .aboutMe h3 {
+    color: #37a5ca;
+}
+#ContactUS button.sendContact {
+    background: #4eb9dd;
+    border: 1px solid #37a5ca;
+}
+#ContactUS button.sendContact:hover {
+    background: #37a5ca;
+}
+#ContactUS form .row .col-md-4 input.form-control:focus, #ContactUS form .row .col-md-12 textarea.form-control:focus {
+    box-shadow: 0 0 5px #4eb9dd;
+}
+.form-control:focus {
+    border-color: #6acced;
+    box-shadow: 0px 2px 5px rgba(78,185,221,0.102), 0px -2px 5px rgba(78,185,221,0.30);
+    -moz-box-shadow: 0px 2px 5px rgba(78,185,221,0.30), 0px -2px 5px rgba(78,185,221,0.30);
+    -webkit-box-shadow: 0px 2px 5px rgba(78,185,221,0.30), 0px -2px 5px rgba(78,185,221,0.30);
+}
