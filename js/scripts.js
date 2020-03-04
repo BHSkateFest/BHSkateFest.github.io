@@ -32,9 +32,9 @@ $(document).ready(function () {
   };
 
   // lightGallery inicialization
-  // if (document.getElementById('lightgallery')) {
-  //    $("#lightgallery").lightGallery();
-  // }
+  if (document.getElementById('lightgallery')) {
+     $("#lightgallery").lightGallery();
+  }
 
   // Main nav menu actions
   var toggleMenu = function() {
@@ -54,12 +54,12 @@ $(document).ready(function () {
   var currYear = currTime.getFullYear() + 1;
   var eventTime = currYear + "/" + currMonth + "/" + currDate;
 
-  $('#countdown').countdown('2018/06/23', function(event) {
+  $('#countdown').countdown('2020/06/06', function(event) {
     $(this).html(event.strftime(''
-      + '<span class="timer__item">%D<span class="timer__item-caption">dias</span></span>'
-      + '<span class="timer__item">%H<span class="timer__item-caption">horas</span></span>'
+      + '<span class="timer__item">%D<span class="timer__item-caption">days</span></span>'
+      + '<span class="timer__item">%H<span class="timer__item-caption">hours</span></span>'
       + '<span class="timer__item">%M<span class="timer__item-caption">min</span></span>'
-      + '<span class="timer__item">%S<span class="timer__item-caption">seg</span></span>'));
+      + '<span class="timer__item">%S<span class="timer__item-caption">sec</span></span>'));
   });
 
   // Video
@@ -85,6 +85,104 @@ $(document).ready(function () {
   $('.js-video__play').on('click', function(){
     toggleVideo();
   });
+
+  // Audio player
+  // Setup the player to autoplay the next track
+  if (document.querySelector('#tracklist')) {
+    var a = audiojs.createAll({
+        trackEnded: function() {
+            var next = $('#tracklist li.playing').next();
+            if (!next.length) next = $('#tracklist li').first();
+            next.addClass('playing').siblings().removeClass('playing');
+            audio.load($('a', next).attr('data-src'));
+            audio.play();
+        }
+    });
+
+    // Calculating track duration
+    var trackList = document.querySelector('#tracklist');
+    var tracks = Array.prototype.slice.call(trackList.querySelectorAll('a'));
+    tracks.forEach(function(item){
+      var trackSrc = item.dataset.src;
+      var tempAudio = document.createElement("AUDIO");
+      tempAudio.src = trackSrc;
+      tempAudio.addEventListener('loadedmetadata', function(e){
+        var trackTimeMin = Math.floor(tempAudio.duration / 60);
+        var trackTimeSec = Math.floor(tempAudio.duration - trackTimeMin * 60);
+        item.querySelector('.js-track-time').innerHTML =  trackTimeMin + ':' + trackTimeSec;
+      });
+    })
+
+    // Load in the first track
+    var audio = a[0];
+    var beforeChange = 0.2;
+
+    var first = $('#tracklist a').attr('data-src');
+    $('#tracklist li').first().addClass('playing');
+    audio.load(first);
+    audio.pause();
+
+    // Load in a track on click
+    $('#tracklist').on('click', 'li', function(e) {
+        e.preventDefault();
+        $(this).addClass('playing').siblings().removeClass('playing');
+        audio.load($('a', this).attr('data-src'));
+        audio.play();
+    });
+
+    // Play next or prev
+    $('.play-next').on('click', function(e) {
+      var next = $('li.playing').next();
+      if (!next.length) next = $('#tracklist li').first();
+      next.click();
+    });
+
+    $('.play-prev').on('click', function(e) {
+      var prev = $('li.playing').prev();
+      if (!prev.length) prev = $('#tracklist li').last();
+      prev.click();
+    });
+
+    $('.volume-icon').on('click', function(){
+      if (audio.element.volume === 0){
+        audio.element.volume = beforeChange || 0.1;
+        $(this).toggleClass('volume-icon--mute');
+      } else {
+        audio.element.volume = 0;
+        $(this).attr('data-volume-icon','f027');
+        $(this).toggleClass('volume-icon--mute');
+      }
+    });
+
+    $('.volume-slider').slider({
+      value  : 20,
+      step   : 1,
+      range  : 'min',
+      min    : 0,
+      max    : 100,
+      change : function(){
+          var value = $(".volume-slider").slider("value");
+          audio.element.volume = (value / 100);
+          beforeChange = audio.element.volume;
+          if (value === 0 && !$('.volume-icon').hasClass('volume-icon--mute')){
+            $('.volume-icon').addClass('volume-icon--mute');
+          } else if (value > 0) {
+            $('.volume-icon').removeClass('volume-icon--mute');
+          }
+      },
+      slide : function(){
+          var value = $(".volume-slider").slider("value");
+          audio.element.volume = (value / 100);
+          beforeChange = audio.element.volume;
+          if (value === 0 && !$('.volume-icon').hasClass('volume-icon--mute')){
+            $('.volume-icon').addClass('volume-icon--mute');
+          } else if (value > 0) {
+            $('.volume-icon').removeClass('volume-icon--mute');
+          }
+      }
+    });
+
+  }
 
   //smooth scrolling
   $('a[href*="#"]:not([href="#"])').on('click', function (e) {
@@ -152,7 +250,7 @@ $(document).ready(function () {
         url: '/comment.php',
         data: formData,
         success: function() {
-          $('#form-submit-errors').text("Sucesso!");
+          $('#form-submit-errors').text("Success!");
         },
         error: function() {
           $('#form-submit-errors').text("Something went wrong...");
