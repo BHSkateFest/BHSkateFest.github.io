@@ -16001,15 +16001,16 @@ button.close {
   background-image: none !important;
 }
 .page-header__link {
-  padding-top: 15px;
-  padding-bottom: 7px;
-  font-size: 18px;
-  line-height: 1;
-  color: #ffffff;
-  font-weight: 600;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  text-transform: capitalize;
-  transition: color 0.3s;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+    transition: color 0.3s;
+    background-color: black;
 }
 @media screen and (min-width: 768px) {
   .page-header__link {
@@ -16094,6 +16095,9 @@ button.close {
 .page-header__brand::after {
   content: ".";
   color: #777777;
+}
+.page-header__nav {
+    background-color: black;
 }
 .page-header__nav li {
   padding-bottom: 65px;
@@ -16239,11 +16243,12 @@ button.close {
   }
 }
 .hero__hello-text {
-  margin-bottom: 100px;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  color: #ffffff;
+    margin-bottom: 100px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    background-color: black;
 }
 @media screen and (min-width: 992px) {
   .hero__hello-text {
