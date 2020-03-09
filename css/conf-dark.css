@@ -16072,11 +16072,19 @@ button.close {
   text-transform: capitalize;
   color: #ffffff;
 }
+    .page-header__brand img {
+        height: 60px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        margin-top: -8px;
+    }
 @media screen and (min-width: 768px) {
   .page-header__brand {
     font-size: 36px;
     padding-top: 26px;
   }
+
+    
 }
 @media screen and (min-width: 992px) {
   .page-header__brand {
@@ -16092,10 +16100,7 @@ button.close {
   opacity: 0;
   pointer-events: none;
 }
-.page-header__brand::after {
-  content: ".";
-  color: #777777;
-}
+
 .page-header__nav {
     background-color: black;
 }
@@ -16108,19 +16113,17 @@ button.close {
     padding-bottom: 0;
   }
 }
-.page-header__nav li:last-child .page-header__link {
-  padding-right: 0;
-}
+
 .page-header__nav ul {
   text-align: center;
   margin-top: 20px;
   padding-top: 24px;
 }
 @media screen and (min-width: 768px) {
-  .page-header__nav ul {
-    float: right;
-    margin-top: 0;
-  }
+    .page-header__nav ul {
+        float: right;
+        margin-top: 0;
+    }
 }
 .page-footer {
   padding-top: 64px;
@@ -16289,15 +16292,15 @@ button.close {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .about__figure {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 50%;
-    right: -120%;
-    margin-top: -280px;
-  }
+    .about__figure {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 25%;
+        right: -120%;
+        margin-top: -280px;
+    }
 }
 .about__heading-text {
   margin-bottom: 26px;
@@ -16515,6 +16518,9 @@ button.close {
 .price__btn {
   width: 100%;
 }
+.sponsors img {
+   max-width:90%;
+}
 .sponsors__text {
   margin-bottom: 85px;
 }
@@ -16526,16 +16532,23 @@ button.close {
   width: 100%;
 }
 .sponsors__item {
-  width: 33%;
+  width: 15%;
   padding: 35px 0px 35px 0px;
   display: inline-block;
 }
+
+.silver .sponsors__item {
+    width: 33%;
+    padding: 35px 0px 35px 0px;
+    display: inline-block;
+}
+
 .sponsors__item:nth-child(-n + 3) {
-  border-bottom: 1px solid #575757;
+  /*border-bottom: 1px solid #575757;*/
 }
 .sponsors__item:nth-child(-n + 2),
 .sponsors__item:nth-child(n + 4) {
-  border-right: 1px solid #575757;
+  /*border-right: 1px solid #575757;*/
 }
 .sponsors__item:last-child {
   border-right: none;

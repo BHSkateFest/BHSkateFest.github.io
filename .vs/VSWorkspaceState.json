@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css"
+    "\\css",
+    "\\images\\clients"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\css\\conf-dark.css",
   "PreviewInSolutionExplorer": false
 }
